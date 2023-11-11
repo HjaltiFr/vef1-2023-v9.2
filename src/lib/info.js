@@ -6,11 +6,7 @@ import { setLoading, setNotLoading } from './lib/ui.js';
 
 export async function renderDetails(parentElement, id) {
     const container = el('main', {});
-    const backElement = el(
-      'div',
-      { class: 'back' },
-      el('a', { href: '/' }, 'Til baka'),
-    );
+    
   
     parentElement.appendChild(container);
     setLoading(container);
